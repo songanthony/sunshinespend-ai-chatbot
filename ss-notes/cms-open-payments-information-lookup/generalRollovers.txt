@@ -1,0 +1,117 @@
+COVERED_RECIPIENT_TYPE|General Payments - Recipient Type - A required field that identifies whether the recipient of the payment or other transfer of value ('TOV') is Physician, Practitioner or a Teaching Hospital. Entries are available from a drop-down menu. A selection other than these for a general payment is not an allowable entry.  
+
+NON_COVERED_RECIPIENT_ENTITY_NAME|General Payments - Non-covered Entity Name - When payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report. 
+
+COVERED_RECIPIENT_TEACHING_HOSPITAL_NAME|General Payments - Teaching Hospital Name - A required field when recipient type is Teaching Hospital, that will be validated against the annual CMS teaching hospital list. This field must be blank when recipient type is Physician or Practitioner. Text up to 100 characters is allowed.
+
+COVERED_RECIPIENT_TEACHING_HOSPITAL_TAX_ID_NUMBER|General Payments - Teaching Hospital Tax ID - A required field when recipient type is Teaching Hospital, that will be validated against the annual CMS teaching hospital list. This field must be blank when recipient type is Physician or Practitioner. A 9-digit number in 999999999 format is allowed (SunshineSpend will auto-remove dashes, e.g. 99-9999999, when entered). 
+
+COVERED_RECIPIENT_PHYSICIAN_FIRST_NAME|General Payments - Recipient First Name - A required field when recipient type is Physician or Practitioner, that is validated against either the current Verified Physician's List, Practitioner or NPPES NPI Registry. This field must be blank when recipient type is Teaching Hospital. Text up to 20 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_MIDDLE_NAME|General Payments - Recipient Middle Name - A non-required field when recipient type is Physician or Practitioner. This field must be blank when recipient type is Teaching Hospital. Text up to 20 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_LAST_NAME|General Payments - Recipient Last Name - A required field when recipient type is Physician or Practitioner, that is validated against either the current Verified Physician's List, Practitioner or NPPES NPI Registry. This field must be blank when recipient type is Teaching Hospital. Text up to 35 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_NAME_SUFFIX|General Payments - Recipient Suffix - A non-required field when recipient type is Physician or Practitioner. This field must be blank when recipient type is teaching hospital. Text up to 5 characters is allowed.
+
+RECIPIENT_BUSINESS_STREET_ADDRESS_LINE_1|General Payments - Recipient Business Address 1 - A required field when recipient type is either Physician, Practitioner or Teaching Hospital. Text up to 55 characters containing building number, street name, street identifier is allowed.
+
+RECIPIENT_BUSINESS_STREET_ADDRESS_LINE_2|General Payments - Recipient Business Address 2 - A non-required field if recipient type is either Physician, Practitioner or Teaching Hospital. Text up to 55 characters containing suite/apartment/post office box numbers or other qualifying information is allowed.
+
+RECIPIENT_CITY|General Payments - Recipient City - A required field when recipient type is either Physician, Practitioner or Teaching Hospital. Text up to 40 characters is allowed.
+
+RECIPIENT_STATE|General Payments - Recipient State - A required field when recipient type is either Physician, Practitioner or Teaching Hospital and recipient country is US or United States, that is validated against the list of states and territories used by the U.S. Postal Service. This field must be blank when recipient country is not US or United States. A 2-character state or territory alpha abbreviation, e.g. California = CA, Oregon = OR, Washington D.C. = DC, Puerto Rico = PR, is allowed. SunshineSpend uses reasonable efforts to auto-update other than allowable entries, e.g. California, Or., Washington D.C., to the allowed 2-character entries. 
+
+RECIPIENT_ZIP_CODE|General Payments - Recipient Zip Code (US only) - A required field when recipient type is either Physician, Practitioner or Teaching Hospital and recipient country is US or United States. This field must be blank when recipient country is not US or United States. A 5- or 9-digit numeric zip code in the format 99999 or 999999999 is allowed (SunshineSpend will auto-remove dashes, e.g. 99999-9999, when entered). 
+
+RECIPIENT_COUNTRY|General Payments - Recipient Country - A required field when recipient type is either Physician, Practitioner or Teaching Hospital, that is validated against the CMS Valid Country Codes list. A 2-character country code is allowed. US payments may also be reported as United States, foregoing the 2-character requirement. SunshineSpend uses reasonable efforts to auto-update entries other than US or United States, e.g. U.S., U.S.A., USA, to the allowed 2-character US.
+
+RECIPIENT_PROVINCE|General Payments - Recipient Province - A non-required field when recipient type is either Physician, Practitioner or Teaching Hospital and recipient country is not US or United States. This field must be blank when recipient country is US or United States. Text up to 20 characters is allowed.
+
+RECIPIENT_POSTAL_CODE|General Payments - Recipient Postal Code (Non-US only) - A required field when recipient type is either Physician, Practitioner or Teaching Hospital and recipient country is not US or United States. This field must be blank when recipient country is US or United States. Alphanumeric text up to 20 characters is allowed.
+
+RECIPIENT_EMAIL_ADDRESS|General Payments - Recipient Email Address - A non-required field when recipient type is either Physician, Practitioner or Teaching Hospital. An email address up to 100 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_PRIMARY_TYPE|General Payments - Recipient Primary Type - A required field when recipient type is Physician or Practitioner. This field must be blank when recipient type is Teaching Hospital. Allowable entries (Physician: MD, DO, DDS, DPM, OD, DCP; Practitioner: PA, NP, CNS, CRN, CNM) are available from a drop-down menu. SunshineSpend uses reasonable efforts to auto-update other than allowable entries, e.g. M.D., D.O., to the allowed 2-character entries. 
+
+COVERED_RECIPIENT_PHYSICIAN_NPI|General Payments - Recipient NPI - A required field when recipient type is Physician or Practitioner and the recipient has an NPI (not the NPI of any group to which the physician nor practitioner may belong), that is validated against either the current Verified Physician's List, Practitioner or NPPES NPI Registry. This field must be blank when recipient type is Teaching Hospital. A 10-digit number that begins with a 1 or 2 is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_SPECIALTY|General Payments - Recipient Specialty - A required field when recipient type is Physician or Practitioner that is validated against the CMS taxonomy code list and, defaults to the recipient's primary taxonomy code found in either the current Verified Physician List, Practitioner or NPPES NPI Registry. This field must be blank when recipient type is Teaching Hospital. A 10-character alphanumeric code is allowed. 
+
+Physician_License_State|General Payments - Recipient License State - A required field when recipient type is Physician or Practitioner, that is validated against the list of states and territories used by the U.S. Postal Service. This field must be blank when recipient type is Teaching Hospital. A 2-character state abbreviation (e.g. California = CA) is allowed. For reporting purposes, SunshineSpend defaults to a single state and license # combination found in either the current Verified Physician's List, Practitioner or NPPES NPI Registry.
+
+COVERED_RECIPIENT_PHYSICIAN_LICENSE_STATE_AND_LICENSE_NUMBER|General Payments - Recipient License Number - A required field when recipient type is Physician or Practitioner. This field must be blank when recipient type is Teaching Hospital. Alphanumeric text up to 25 characters is allowed. For reporting purposes, SunshineSpend defaults to a single state and license # combination found in either the current Verified Physician's List, Practitioner or NPPES NPI Registry.
+
+Product-1|General Payments - Product-1 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV. If multiple products, specify in order of priority.
+
+Product-2|General Payments - Product-2 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV. If multiple products,
+specify in order of priority.
+
+Product-3|General Payments - Product-3 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV. If multiple products,
+specify in order of priority.
+
+Product-4|General Payments - Product-4 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV. If multiple products,
+specify in order of priority.
+
+Product-5|General Payments - Product-5 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV. If multiple products,
+specify in order of priority.
+
+APPLICABLE_MANUFACTURER_OR_APPLICABLE_GPO_MAKING_PAYMENT_NAME|General Payments - Manufacturer or GPO Making Payment - A required field that identifies the manufacturer or GPO who made the payment or other transfer of value ('TOV') in the corresponding record, that is validated against the CMS registration name (an exact match is required). Manufacturers or GPOs are configured in Company Information setup. Multiple manufacturers or GPOs may be used when a consolidated report will be submitted. 
+
+HOME_SYSTEM_PAYMENT_ID|General Payments - Home System ID - A non-required field that may be populated with any reference from a manufacturer or GPO's source system, e.g. check #, system name (ERP, Concur, Quickbooks, etc.), employee name, or other reference that would enable the user to easily identify supporting information. Text up to 50 characters is allowed.  
+
+TOTAL_AMOUNT_OF_RESEARCH_PAYMENT_U_S_DOLLARS|General Payments - Payment Amount - A required field that shows the amount of payment to the recipient in USD. Payments should be singularly tied to a payment category, e.g. 1000.00 for consulting fee, 2500.00 for honoraria, and so on. Up to a 13-character value including decimal point, e.g. 9999999999.99, is allowed but 0.00 is not allowed. SunshineSpend uses reasonable efforts to auto-update the amount entered, e.g. $1,000.00, 10, $100, to the allowed format by removing extraneous characters or adding decimal and numbers.  
+
+DATE_OF_PAYMENT|General Payments - Date of Payment - A required field that, when reporting a singular payment, should use the actual date the payment was issued or, when reporting EITHER a series of payments OR an aggregation of a set of payments, should use the date of the first payment to the recipient in the period being reported. An 8-character date in the format YYYYMMDD is allowed. SunshineSpend uses reasonable efforts to auto-update the date to the allowed format by removing extraneous characters or reformatting the character order, e.g. 2018-12-01 = 20181201, Dec. 1, 2018 = 20181201, 12/1/2018 = 20181201 and so on.  
+
+NUMBER_OF_PAYMENTS_INCLUDED_IN_TOTAL_AMOUNT|General Payments - # of Payments - A required field that, when reporting a singular payment, should be 1 or, when reporting EITHER a series of payments OR an aggregation of a set of payments, should report the actual number of payments made to the recipient in the period being reported. Up to a 3-digit number is allowed. When the Number of Payments box is checked in Automation Options, all General Payments file imports and manual rows will default this entry to 1. 
+
+FORM_OF_PAYMENT_OR_TRANSFER_OF_VALUE|General Payments - Form of Payment - A required field used to describe the method of payment(s) to recipients. Allowable entries (e.g. cash or cash equivalent, in-kind items and services) are available from a drop-down menu. When a selection is made in Automation Options, all General Payments file imports and manual rows will default to the selected entry.
+
+EXPENDITURE_CATEGORY|General Payments - Payment Category - A required field used to describe the nature of payments or other transfers of value to recipients. Allowable entries (e.g. consulting fee, honoraria, travel and lodging, etc.) are available from a drop-down menu. A selection other than one prepended with a (G) for a general payment is not allowed. When a selection is made in Automation Options, all General Payments file imports and manual rows will default to the selected entry.
+
+CITY_OF_TRAVEL|General Payments - City of Travel - A required field when payment category is Travel and Lodging, and should be populated with the destination city where the payment recipient traveled. This field must be blank when the payment category is not Travel and Lodging. Text up to 20 characters is allowed. 
+
+STATE_OF_TRAVEL|General Payments - State of Travel - A required field when payment category is Travel and Lodging and Country of Travel is the US or United States, that is validated against the list of states and territories used by the U.S. Postal Service and should be populated with the destination state where the payment recipient traveled. This field must be blank when payment category is not Travel and Lodging and Country of Travel is not US or United States. A 2-character state or territory alpha abbreviation, e.g. California = CA, Oregon = OR, Washington D.C. = DC, Puerto Rico = PR, is allowed. SunshineSpend uses reasonable efforts to auto-update other than allowable entries, e.g. California, Or., Washington D.C., to the allowed 2-character entries. 
+
+COUNTRY_OF_TRAVEL|General Payments - Country of Travel - A required field when payment category is Travel and Lodging, that is validated against the CMS Valid Country Codes list and should be populated with the destination country where the payment recipient traveled. This field must be blank when payment category is not Travel and Lodging. A 2-character country code is allowed. US payments may also be reported as United States, foregoing the 2-character requirement. SunshineSpend uses reasonable efforts to auto-update entries other than US or United States, e.g. U.S., U.S.A., USA, to the allowed 2-character US. 
+
+INTEREST_HELD_BY_PHYSICIAN_OR_AN_IMMEDIATE_FAMILY_MEMBER|General Payments - Interest Holder - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report. 
+
+DOLLAR_AMOUNT_INVESTED|General Payments - Invested Amount - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report. 
+
+VALUE_OF_INTEREST|General Payments - Investment Value - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+TERMS_OF_INTEREST|General Payments - Terms of Interest - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+PHYSICIAN_OWNERSHIP_INDICATOR|General Payments - Physician Ownership Indicator - A required field when recipient type is Physician and the physician holds an ownership or investment interest in the manufacturer or GPO making payment. This field should reference only the physician's interest - not the  physician's family members' interest. This field must be blank when recipient type is Practitioner or Teaching Hospital. Allowable entries are Yes or No and, are available from a drop-down menu. When the Physician Ownership Indicator box is checked in Automation Options, all General Payments file imports and manual rows will default this entry to No. 
+
+THIRD_PARTY_PAYMENT_RECIPIENT_INDICATOR|General Payments - 3rd Party Payment Indicator - A required field that indicates whether a payment or other transfer of value was made to a third-party entity or individual at the request of, or on behalf of, a payment recipient (Physician, Practitioner or Teaching Hospital). Allowable entries are Entity, Individual, or No Third Party Payment, and are available from a drop-down menu. When the 3rd Party Payment Indicator box is checked in Automation Options, all General Payments file imports and manual rows will default this entry to No Third Party Payment. 
+
+NAME_OF_THIRD_PARTY_ENTITY_RECEIVING_PAYMENT_OR_XFER_OF_VALUE|General Payments - Name of 3rd Party Entity - A required field when 3rd payment indicator is Entity. This field must be blank when 3rd party payment indicator is Individual or No Third Party Payment. Text up to 50 characters is allowed. 
+
+CHARITY_INDICATOR|General Payments - Charity Indicator - A non-required field that may be reported when 3rd party payment indicator is Entity and, the entity that received payment is a charity. This field must be blank when 3rd party payment indicator is Individual or No Third Party Payment. Allowable entries are Yes or No, and are available from a drop-down menu.
+
+THIRD_PARTY_EQUALS_COVERED_RECIPIENT_INDICATOR|General Payments - 3rd Party Equals Recipient Indicator - A required field when 3rd party payment indicator is Entity or Individual and, is used to identify whether the 3rd party that received payment is a covered recipient. This field must be blank if 3rd party payment indicator is No Third Party Payment. Allowable entries are Yes or No, and are available from a drop-down menu. 
+
+DELAY_IN_PUBLICATION_OF_RESEARCH_PAYMENT_INDICATOR|General Payments - Publication Delay Request - A required field that indicates whether a manufacturer or GPO is requesting a delay in publication of a payment or other transfer of value ('TOV'). CMS will display payments or TOV no later than four years after the initial request for delay in publication. NOTE: SunshineSpend does not determine when the delay request from prior years expires. Allowable entries are R&D on New Product, Clinical Investigation on New Product, and No Delay Requested, and are available from a drop-down menu. When the Publication Delay Request box is checked in Automation Options, all General Payments file imports and manual rows will default this entry to No Delay Requested. 
+
+PRE_CLINICAL_RESEARCH_INDICATOR|General Payments - Pre-clinical Indicator - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+NAME_OF_STUDY|General Payments - Study Name - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+CONTEXTUAL_INFORMATION|General Payments - Contextual Information - A required field when publication delay request is R&D on New Product or Clinical Investigation on New Product, and non-required when publication delay request is No Delay Requested. Report the related research study and any information regarding the payment that the reporting entity believes will be useful. Text up to 500 characters is allowed.
+
+CLINICALTRIALS_GOV_IDENTIFIER|General Payments - ClinicalTrials.gov ID - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+RESEARCH_INFORMATION_LINK|General Payments - Research URL - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+PI-1|General Payments - PI-1 - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+PI-2|General Payments - PI-2 - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+PI-3|General Payments - PI-3 - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+PI-4|General Payments - PI-4 - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.
+
+PI-5|General Payments - PI-5 - When the selected payment type is General, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the general payments submission report.

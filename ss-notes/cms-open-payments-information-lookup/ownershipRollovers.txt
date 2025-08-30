@@ -1,0 +1,109 @@
+COVERED_RECIPIENT_TYPE|Ownership or Investment Interest - Recipient Type - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+NON_COVERED_RECIPIENT_ENTITY_NAME|Ownership or Investment Interest - Non-covered Entity Name - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report. 
+
+COVERED_RECIPIENT_TEACHING_HOSPITAL_NAME|Ownership or Investment Interest - Teaching Hospital Name - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+COVERED_RECIPIENT_TEACHING_HOSPITAL_TAX_ID_NUMBER|Ownership or Investment Interest - Teaching Hospital Tax ID - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+COVERED_RECIPIENT_PHYSICIAN_FIRST_NAME|Ownership or Investment Interest - Physician First Name - A required field that is validated against either the current Verified Physician's List or NPPES NPI Registry. Text up to 20 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_MIDDLE_NAME|Ownership or Investment Interest - Physician Middle Name - A non-required field. Text up to 20 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_LAST_NAME|Ownership or Investment Interest - Physician Last Name - A required field that is validated against either the current Verified Physician's List or NPPES NPI Registry. Text up to 35 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_NAME_SUFFIX|Ownership or Investment Interest - Physician Suffix - A non-required field. Text up to 5 characters is allowed.
+
+RECIPIENT_BUSINESS_STREET_ADDRESS_LINE_1|Ownership or Investment Interest - Recipient Business Address 1 - A required field. Text up to 55 characters containing building number, street name, street identifier is allowed.
+
+RECIPIENT_BUSINESS_STREET_ADDRESS_LINE_2|Ownership or Investment Interest - Recipient Business Address 2 - A non-required field. Text up to 55 characters containing suite/apartment/post office box numbers or other qualifying information is allowed.
+
+RECIPIENT_CITY|Ownership or Investment Interest - Recipient City - A required field. Text up to 40 characters is allowed.
+
+RECIPIENT_STATE|Ownership or Investment Interest - Recipient State - A required field when recipient country is US or United States, that is validated against the list of states and territories used by the U.S. Postal Service. This field must be blank when recipient country is not US or United States. A 2-character state or territory alpha abbreviation, e.g. California = CA, Oregon = OR, Washington D.C. = DC, Puerto Rico = PR, is allowed. SunshineSpend uses reasonable efforts to auto-update other than allowable entries, e.g. California, Or., Washington D.C., to the allowed 2-character entries. 
+
+RECIPIENT_ZIP_CODE|Ownership or Investment Interest - Recipient Zip Code (US only) - A required field when recipient country is US or United States. This field must be blank when recipient country is not US or United States. A 5- or 9-digit numeric zip code in the format 99999 or 999999999 is allowed (SunshineSpend will auto-remove dashes, e.g. 99999-9999, when entered). 
+
+RECIPIENT_COUNTRY|Ownership or Investment Interest - Recipient Country - A required field that is validated against the CMS Valid Country Codes list. A 2-character country code is allowed. US payments may also be reported as United States, foregoing the 2-character requirement. SunshineSpend uses reasonable efforts to auto-update entries other than US or United States, e.g. U.S., U.S.A., USA, to the allowed 2-character US.
+
+RECIPIENT_PROVINCE|Ownership or Investment Interest - Recipient Province - A non-required field when recipient country is not US or United States. This field must be blank when recipient country is US or United States. Text up to 20 characters is allowed.
+
+RECIPIENT_POSTAL_CODE|Ownership or Investment Interest - Recipient Postal Code (Non-US only) - A required field when recipient country is not US or United States. This field must be blank when recipient country is US or United States. Alphanumeric text up to 20 characters is allowed.
+
+RECIPIENT_EMAIL_ADDRESS|Ownership or Investment Interest - Recipient Email Address - A non-required field. An email address up to 100 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_PRIMARY_TYPE|Ownership or Investment Interest - Physician Primary Type - A required field. Allowable entries (MD, DO, DDS, DPM, OD, DCP) are available from a drop-down menu. SunshineSpend uses reasonable efforts to auto-update other than allowable entries, e.g. M.D., D.O., to the allowed 2-character entries. 
+
+COVERED_RECIPIENT_PHYSICIAN_NPI|Ownership or Investment Interest - Physician NPI - A required field when the physician has an NPI (not the NPI of any group to which the physician may belong), that is validated against either the current Verified Physician's List or NPPES NPI Registry. A 10-digit number that begins with a 1 or 2 is allowed. 
+
+COVERED_RECIPIENT_PHYSICIAN_SPECIALTY|Ownership or Investment Interest - Physician Specialty - A required field that is validated against the CMS taxonomy code list and, defaults to the physician's primary taxonomy code found in either the current Verified Physician List or NPPES NPI Registry. A 10-character alphanumeric code is allowed. 
+
+Physician_License_State|Ownership or Investment Interest - Physician License State - A required field, that is validated against the list of states and territories used by the U.S. Postal Service. A 2-character state abbreviation (e.g. California = CA) is allowed. For reporting purposes, SunshineSpend defaults to a single state and license # combination found in either the current Verified Physician's List or NPPES NPI Registry.
+
+COVERED_RECIPIENT_PHYSICIAN_LICENSE_STATE_AND_LICENSE_NUMBER|Ownership or Investment Interest - Physician License Number - A required field. Alphanumeric text up to 25 characters is allowed. For reporting purposes, SunshineSpend defaults to a single state and license # combination found in either the current Verified Physician's List or NPPES NPI Registry.
+
+Product-1|Ownership or Investment Interest - Product-1 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+Product-2|Ownership or Investment Interest - Product-2 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+Product-3|Ownership or Investment Interest - Product-3 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+Product-4|Ownership or Investment Interest - Product-4 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+Product-5|Ownership or Investment Interest - Product-5 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+APPLICABLE_MANUFACTURER_OR_APPLICABLE_GPO_MAKING_PAYMENT_NAME|Ownership or Investment Interest - Manufacturer or GPO Making Payment - A required field that identifies the manufacturer or GPO reporting the ownership or investment interest in the corresponding record, that is validated against the CMS registration name (an exact match is required). Manufacturers or GPOs are configured in Company Information setup. Multiple manufacturers or GPOs may be used when a consolidated report will be submitted. 
+
+HOME_SYSTEM_PAYMENT_ID|Ownership or Investment Interest - Home System ID - A non-required field that may be populated with any reference from a manufacturer or GPO's source system, e.g. check #, system name (ERP, Concur, Quickbooks, etc.), employee name, or other reference that would enable the user to easily identify supporting information. Text up to 50 characters is allowed.  
+
+TOTAL_AMOUNT_OF_RESEARCH_PAYMENT_U_S_DOLLARS|Ownership or Investment Interest - Payment Amount - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+NUMBER_OF_PAYMENTS_INCLUDED_IN_TOTAL_AMOUNT|Ownership or Investment Interest - # Payments in Total - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+FORM_OF_PAYMENT_OR_TRANSFER_OF_VALUE|Ownership or Investment Interest - Form of Payment - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+CITY_OF_TRAVEL|Ownership or Investment Interest - City of Travel - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+STATE_OF_TRAVEL|Ownership or Investment Interest - State of Travel - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+COUNTRY_OF_TRAVEL|Ownership or Investment Interest - Country of Travel - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report. 
+
+INTEREST_HELD_BY_PHYSICIAN_OR_AN_IMMEDIATE_FAMILY_MEMBER|Ownership or Investment Interest - Interest Holder - A required field which indicates whether the ownership or investment interest is held by the physician themselves or by an immediate family member. Allowable entries (Physician Covered Recipient, Immediate Family Member) are available from a drop-down menu.
+
+DOLLAR_AMOUNT_INVESTED|Ownership or Investment Interest - Invested Amount - A required field that reports the amount (for the REPORTING CALENDAR YEAR ONLY) of ownership interest added, or invested by, the physician (or the physician’s immediate family members) in the applicable manufacturer or GPO. NOTE: this amount DOES NOT represent the cumulative current value of all ownership or investment interest held by the parties. Up to a 13-character value (in US dollars) including decimal point, e.g. 9999999999.99 is allowed. The Invested Amount cannot be 0.00 if the Investment Value is also 0.00. SunshineSpend uses reasonable efforts to auto-update the amount entered to the allowed format by removing extraneous characters or adding decimal and numbers, e.g. $1,000.00 = 1000.00, 10 = 10.00, and $100 = 100.00. 
+
+VALUE_OF_INTEREST|Ownership or Investment Interest - Investment Value - A required field that reports the CURRENT CUMULATIVE VALUE (as of the most recent feasible valuation date preceding the reporting date), of ownership or investment interest HELD by the physician (or the physician’s immediate family members) in the applicable manufacturer or GPO. Up to a 13-character value (in US dollars) including decimal point, e.g. 9999999999.99 is allowed. The Investment Value cannot be 0.00 if the Invested Amount is also 0.00. SunshineSpend uses reasonable efforts to auto-update the amount entered to the allowed format by removing extraneous characters or adding decimal and numbers, e.g. $1,000.00 = 1000.00, 10 = 10.00, and $100 = 100.00. 
+
+TERMS_OF_INTEREST|Ownership or Investment Interest - Terms of Interest - A required field that describes any applicable terms of the ownership or investment interest including, but not limited to, stock, stock options, partnership shares, loans, bonds, or other financial instruments that are secured with an entity’s property or revenue or a portion of that property or revenue. Text should be no more than 500 characters. 
+
+PHYSICIAN_OWNERSHIP_INDICATOR|Ownership or Investment Interest - Physician Ownership Indicator - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+THIRD_PARTY_PAYMENT_RECIPIENT_INDICATOR|Ownership or Investment Interest - 3rd Party Payment Indicator - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+NAME_OF_THIRD_PARTY_ENTITY_RECEIVING_PAYMENT_OR_XFER_OF_VALUE|Ownership or Investment Interest - Name of 3rd Party Entity - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+CHARITY_INDICATOR|Ownership or Investment Interest - Charity Indicator - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+THIRD_PARTY_EQUALS_COVERED_RECIPIENT_INDICATOR|Ownership or Investment Interest - 3rd Party Equals Recipient Indicator - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+DELAY_IN_PUBLICATION_OF_RESEARCH_PAYMENT_INDICATOR|Ownership or Investment Interest - Publication Delay Request - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report. 
+
+PRE_CLINICAL_RESEARCH_INDICATOR|Ownership or Investment Interest - Pre-clinical Indicator - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+NAME_OF_STUDY|Ownership or Investment Interest - Study Name - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+CONTEXTUAL_INFORMATION|Ownership or Investment Interest - Contextual Information - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+CLINICALTRIALS_GOV_IDENTIFIER|Ownership or Investment Interest - ClinicalTrials.gov ID - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+RESEARCH_INFORMATION_LINK|Ownership or Investment Interest - Research URL - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+PI-1|Ownership or Investment Interest - PI-1 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+PI-2|Ownership or Investment Interest - PI-2 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+PI-3|Ownership or Investment Interest - PI-3 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+PI-4|Ownership or Investment Interest - PI-4 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.
+
+PI-5|Ownership or Investment Interest - PI-5 - When the selected payment type is Ownership, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the ownership or investment interest submission report.

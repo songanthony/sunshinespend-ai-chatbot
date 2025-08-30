@@ -1,0 +1,115 @@
+COVERED_RECIPIENT_TYPE|Research Payments - Recipient Type - A required field that identifies whether the recipient of the payment or other transfer of value ('TOV') is Covered Recipient Physician, Covered Recipient Practitioner, Covered Recipient Teaching Hospital, Non-covered Recipient Entity, or Non-covered Recipient Individual. Entries are available from a drop-down menu. A selection other than these for a research payment is not an allowable entry.  
+
+NON_COVERED_RECIPIENT_ENTITY_NAME|Research Payments - Non-covered Entity Name - A required field when recipient type is Non-covered Recipient Entity. This field must be blank for any other recipient type. Text up to 100 characters is allowed. 
+
+COVERED_RECIPIENT_TEACHING_HOSPITAL_NAME|Research Payments - Teaching Hospital Name - A required field when recipient type is Covered Recipient Teaching Hospital, that will be validated against the annual CMS teaching hospital list. This field must be blank for any other recipient type. Text up to 100 characters is allowed.
+
+COVERED_RECIPIENT_TEACHING_HOSPITAL_TAX_ID_NUMBER|Research Payments - Teaching Hospital Tax ID - A required field when recipient type is Covered Recipient Teaching Hospital, that will be validated against the annual CMS teaching hospital list. This field must be blank for any other recipient type. A 9-digit number in 999999999 format is allowed (SunshineSpend will auto-remove dashes, e.g. 99-9999999, when entered). 
+
+COVERED_RECIPIENT_PHYSICIAN_FIRST_NAME|Research Payments - Physician First Name - A required field when recipient type is Covered Recipient Physician, that is validated against either the current Verified Physician's List or NPPES NPI Registry. This field must be blank for any other recipient type. Text up to 20 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_MIDDLE_NAME|Research Payments - Physician Middle Name - A non-required field when recipient type is Covered Recipient Physician. This field must be blank for any other recipient type. Text up to 20 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_LAST_NAME|Research Payments - Physician Last Name - A required field when recipient type is Covered Recipient Physician, that is validated against either the current Verified Physician's List or NPPES NPI Registry. This field must be blank for any other recipient type. Text up to 35 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_NAME_SUFFIX|Research Payments - Physician Suffix - A non-required field when recipient type is Covered Recipient Physician. This field must be blank for any other recipient type. Text up to 5 characters is allowed.
+
+RECIPIENT_BUSINESS_STREET_ADDRESS_LINE_1|Research Payments - Recipient Business Address 1 - A required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, or Non-covered Recipient Entity. This field must be blank when recipient type is Non-covered Recipient Individual. Text up to 55 characters containing building number, street name, street identifier is allowed.
+
+RECIPIENT_BUSINESS_STREET_ADDRESS_LINE_2|Research Payments - Recipient Business Address 2 - A non-required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, or Non-covered Recipient Entity. This field must be blank when recipient type is Non-covered Recipient Individual. Text up to 55 characters containing suite/apartment/post office box numbers or other qualifying information is allowed.
+
+RECIPIENT_CITY|Research Payments - Recipient City - A required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, or Non-covered Recipient Entity. This field must be blank when recipient type is Non-covered Recipient Individual. Text up to 40 characters is allowed.
+
+RECIPIENT_STATE|Research Payments - Recipient State - A required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, Non-covered Recipient Entity, or Non-covered Recipient Individual and recipient country is US or United States, that is validated against the list of states and territories used by the U.S. Postal Service. This field must be blank when recipient country is not US or United States. A 2-character state or territory alpha abbreviation, e.g. California = CA, Oregon = OR, Washington D.C. = DC, Puerto Rico = PR, is allowed. SunshineSpend uses reasonable efforts to auto-update other than allowable entries, e.g. California, Or., Washington D.C., to the allowed 2-character entries. 
+
+RECIPIENT_ZIP_CODE|Research Payments - Recipient Zip Code (US only) - A required field when recipient type is either Covered Recipient Physician, Covered Recipient Teaching Hospital, or Non-covered Recipient Entity and recipient country is US or United States. This field must be blank when recipient country is not US or United States, or recipient type is Non-covered Recipient Individual. A 5- or 9-digit numeric zip code in the format 99999 or 999999999 is allowed (SunshineSpend will auto-remove dashes, e.g. 99999-9999, when entered). 
+
+RECIPIENT_COUNTRY|Research Payments - Recipient Country - A required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, Non-covered Recipient Entity, or Non-covered Recipient Individual, that is validated against the CMS Valid Country Codes list. A 2-character country code is allowed. US payments may also be reported as United States, foregoing the 2-character requirement. SunshineSpend uses reasonable efforts to auto-update entries other than US or United States, e.g. U.S., U.S.A., USA, to the allowed 2-character US.
+
+RECIPIENT_PROVINCE|Research Payments - Recipient Province - A non-required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, or Non-covered Recipient Entity and recipient country is not US or United States. This field must be blank when recipient country is US or United States, or recipient type is Non-covered Recipient Individual. Text up to 20 characters is allowed.
+
+RECIPIENT_POSTAL_CODE|Research Payments - Recipient Postal Code (Non-US only) - A required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, or Non-covered Recipient Entity and recipient country is not US or United States. This field must be blank when recipient country is US or United States, or recipient type is Non-covered Recipient Individual. Alphanumeric text up to 20 characters is allowed.
+
+RECIPIENT_EMAIL_ADDRESS|Research Payments - Recipient Email Address - A non-required field when recipient type is Covered Recipient Physician, Covered Recipient Teaching Hospital, or Non-covered Recipient Entity. This field must be blank for Non-covered Recipient Individual. An email address up to 100 characters is allowed.
+
+COVERED_RECIPIENT_PHYSICIAN_PRIMARY_TYPE|Research Payments - Physician Primary Type - A required field when recipient type is Covered Recipient Physician. This field must be blank for any other recipient type. Allowable entries (Covered Recipient Physician: MD, DO, DDS, DPM, OD, DCP; Covered Recipient Practitioner: PA, NP, CNS, CRN, CNM) are available from a drop-down menu. SunshineSpend uses reasonable efforts to auto-update other than allowable entries, e.g. M.D., D.O., to the allowed 2-character entries. 
+
+COVERED_RECIPIENT_PHYSICIAN_NPI|Research Payments - Physician NPI - A required field when recipient type is Covered Recipient Physician and the physician has an NPI (not the NPI of any group to which the physician may belong), that is validated against either the current Verified Physician's List or NPPES NPI Registry. This field must be blank for any other recipient type. A 10-digit number that begins with a 1 or 2 is allowed. 
+
+COVERED_RECIPIENT_PHYSICIAN_SPECIALTY|Research Payments - Physician Specialty - A required field when recipient type is Covered Recipient Physician that is validated against the CMS taxonomy code list and, defaults to the physician's primary taxonomy code found in either the current Verified Physician List or NPPES NPI Registry. This field must be blank for any other recipient type. A 10-character alphanumeric code is allowed. 
+
+Physician_License_State|Research Payments - Physician License State - A required field when recipient type is Covered Recipient Physician, that is validated against the list of states and territories used by the U.S. Postal Service. This field must be blank for any other recipient type. A 2-character state abbreviation (e.g. California = CA) is allowed. For reporting purposes, SunshineSpend defaults to a single state and license # combination found in either the current Verified Physician's List or NPPES NPI Registry.
+
+COVERED_RECIPIENT_PHYSICIAN_LICENSE_STATE_AND_LICENSE_NUMBER|Research Payments - Physician License Number - A required field when recipient type is Covered Recipient Physician. This field must be blank for any other recipient type. Alphanumeric text up to 25 characters is allowed. For reporting purposes, SunshineSpend defaults to a single state and license # combination found in either the current Verified Physician's List or NPPES NPI Registry. 
+
+Product-1|Research Payments - Product-1 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV.
+
+Product-2|Research Payments - Product-2 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV.
+
+Product-3|Research Payments - Product-3 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV.
+
+Product-4|Research Payments - Product-4 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV.
+
+Product-5|Research Payments - Product-5 - Indicates the product(s) associated with the payment or other transfer of value ('TOV'). Products are configured in Product Information setup. Up to five (5) products may be associated with each payment or TOV.
+
+APPLICABLE_MANUFACTURER_OR_APPLICABLE_GPO_MAKING_PAYMENT_NAME|Research Payments - Manufacturer or GPO Making Payment - A required field that identifies the manufacturer or GPO who made the payment or other transfer of value ('TOV') in the corresponding record, that is validated against the CMS registration name (an exact match is required). Manufacturers or GPOs are configured in Company Information setup. Multiple manufacturers or GPOs may be used when a consolidated report will be submitted. 
+
+HOME_SYSTEM_PAYMENT_ID|Research Payments - Home System ID - A non-required field that may be populated with any reference from a manufacturer or GPO's source system, e.g. check #, system name (ERP, Concur, Quickbooks, etc.), employee name, or other reference that would enable the user to easily identify supporting information. Text up to 50 characters is allowed.  
+
+TOTAL_AMOUNT_OF_RESEARCH_PAYMENT_U_S_DOLLARS|Research Payments - Payment Amount - A required field that shows the amount of payment to the recipient in USD. Up to a 13-character value including decimal point, e.g. 9999999999.99, is allowed but 0.00 is not allowed. SunshineSpend uses reasonable efforts to auto-update the amount entered, e.g. $1,000.00, 10, $100, to the allowed format by removing extraneous characters or adding decimal and numbers.  
+
+DATE_OF_PAYMENT|Research Payments - Date of Payment - A required field that, when reporting a singular payment, should use the actual date the payment was issued or, when reporting EITHER a series of payments OR an aggregation of a set of payments, should use the date of the first payment to the recipient in the period being reported. An 8-character date in the format YYYYMMDD is allowed. SunshineSpend uses reasonable efforts to auto-update the date to the allowed format by removing extraneous characters or reformatting the character order, e.g. 2018-12-01 = 20181201, Dec. 1, 2018 = 20181201, 12/1/2018 = 20181201 and so on.  
+
+NUMBER_OF_PAYMENTS_INCLUDED_IN_TOTAL_AMOUNT|Research Payments - % of Payment - A required field when payment category has a valid entry, that represents the percentage of the payment applied to the selected payment category. This field must be blank when payment category is blank. Numbers 1 to 100 with/without a % character are allowable entries. SunshineSpend will auto-update entries to display the % character when not entered. For reporting purposes, SunshineSpend combines Payment Category with % of Payment in the format required by CMS. 
+
+FORM_OF_PAYMENT_OR_TRANSFER_OF_VALUE|Research Payments - Form of Payment - A required field used to describe the method of payment(s) to recipients. Allowable entries (e.g. cash or cash equivalent, in-kind items and services) are available from a drop-down menu. 
+
+EXPENDITURE_CATEGORY|Research Payments - Payment Category - A non-required field used to describe the nature of payments or other transfers of value ('TOV') to recipients. Allowable entries (e.g. Professional Salary Support, Patient Care, Other) are available from a drop-down menu. A selection other than one prepended with a (R) for a research payment is not allowed. For reporting purposes, SunshineSpend combines Payment Category with % of Payment in the format required by CMS.  
+
+CITY_OF_TRAVEL|Research Payments - City of Travel - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report. 
+
+STATE_OF_TRAVEL|Research Payments - State of Travel - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+COUNTRY_OF_TRAVEL|Research Payments - Country of Travel - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+INTEREST_HELD_BY_PHYSICIAN_OR_AN_IMMEDIATE_FAMILY_MEMBER|Research Payments - Interest Holder - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+DOLLAR_AMOUNT_INVESTED|Research Payments - Invested Amount - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report. 
+
+VALUE_OF_INTEREST|Research Payments - Investment Value - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+TERMS_OF_INTEREST|Research Payments - Terms of Interest - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+PHYSICIAN_OWNERSHIP_INDICATOR|Research Payments - Physician Ownership Indicator - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+THIRD_PARTY_PAYMENT_RECIPIENT_INDICATOR|Research Payments - 3rd Party Payment Indicator - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+NAME_OF_THIRD_PARTY_ENTITY_RECEIVING_PAYMENT_OR_XFER_OF_VALUE|Research Payments - Name of 3rd Party Entity - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+CHARITY_INDICATOR|Research Payments - Charity Indicator - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+THIRD_PARTY_EQUALS_COVERED_RECIPIENT_INDICATOR|Research Payments - 3rd Party Equals Recipient Indicator - When the selected payment type is Research, this is a non-reportable field and should be left blank. If populated, it will be ignored by SunshineSpend when generating the research payments submission report.
+
+
+DELAY_IN_PUBLICATION_OF_RESEARCH_PAYMENT_INDICATOR|Research Payments - Publication Delay Request - A required field that indicates whether a manufacturer or GPO is requesting a delay in publication of a payment or other transfer of value ('TOV'). CMS will display payments or TOV no later than four years after the initial request for delay in publication. NOTE: SunshineSpend does not determine when the delay request from prior years expires. Allowable entries are R&D on New Product, Clinical Investigation on New Product, and No Delay Requested, and are available from a drop-down menu. 
+
+PRE_CLINICAL_RESEARCH_INDICATOR|Research Payments - Pre-clinical Indicator - A required field that indicates whether the research reported is pre-clinical or not. Allowable entries are Yes or No, and are available from a drop-down menu. 
+
+NAME_OF_STUDY|Research Payments - Study Name - A required field when pre-clinical indicator is No. Text up to 500 characters is allowed.
+
+CONTEXTUAL_INFORMATION|Research Payments - Contextual Information - A non-required field that describes the context or objectives of the research being reported. Text up to 500 characters is allowed. 
+
+CLINICALTRIALS_GOV_IDENTIFIER|Research Payments - ClinicalTrials.gov ID - A non-required field that references the research as identified on ClinicalTrials.gov. An alphanumeric 11-character entry in the format AAA99999999 is allowed.
+
+RESEARCH_INFORMATION_LINK|Research Payments - Research URL - A non-required link to information relevant to the research being reported. A web URL up to 2083 characters is allowed.
+
+PI-1|Research Payments - PI-1 - Indicates the principal investigator(s) associated with the payment or other transfer of value ('TOV'). Principal Investigators are configured in PI Information setup. Up to five (5) PIs may be associated with each payment or TOV.
+
+PI-2|Research Payments - PI-2 - Indicates the principal investigator(s) associated with the payment or other transfer of value ('TOV'). Principal Investigators are configured in PI Information setup. Up to five (5) PIs may be associated with each payment or TOV.
+
+PI-3|Research Payments - PI-3 - Indicates the principal investigator(s) associated with the payment or other transfer of value ('TOV'). Principal Investigators are configured in PI Information setup. Up to five (5) PIs may be associated with each payment or TOV.
+
+PI-4|Research Payments - PI-4 - Indicates the principal investigator(s) associated with the payment or other transfer of value ('TOV'). Principal Investigators are configured in PI Information setup. Up to five (5) PIs may be associated with each payment or TOV.
+
+PI-5|Research Payments - PI-5 - Indicates the principal investigator(s) associated with the payment or other transfer of value ('TOV'). Principal Investigators are configured in PI Information setup. Up to five (5) PIs may be associated with each payment or TOV.
+

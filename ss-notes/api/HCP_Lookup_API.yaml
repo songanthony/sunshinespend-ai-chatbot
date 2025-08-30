@@ -1,0 +1,81 @@
+openapi: 3.0.0
+info:
+  title: SunshineSpend HCP Lookup API
+  version: "3.0"
+  description: |
+    SunshineSpend unified history API. Results are grouped by **NPI** to ensure uniqueness,
+    and multiple licenses are aggregated into comma-separated lists (`license_states`, `license_numbers`).
+
+servers:
+  - url: https://sunshinespend.com/api
+
+paths:
+  /hcp_lookup.php:
+    post:
+      summary: Search SunshineSpend History
+      description: >
+        Search physicians and practitioners. At least one of `last_name`, `npi`, or `license_number`
+        is required. Results are grouped by NPI, with license numbers aggregated.
+      requestBody:
+        required: false
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                last_name:
+                  type: string
+                  description: Last name (exact or SOUNDEX match)
+                first_name:
+                  type: string
+                  description: First name or single initial
+                npi:
+                  type: string
+                  description: NPI number (unique identifier)
+                license_number:
+                  type: string
+                  description: State license + number (exact match)
+                specialty:
+                  type: string
+                  description: Specialty substring match
+                limit:
+                  type: integer
+                  default: 10
+                  description: Max number of records to return
+      responses:
+        '200':
+          description: Successful search results
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  type: object
+                  properties:
+                    npi:
+                      type: string
+                    first_name:
+                      type: string
+                    last_name:
+                      type: string
+                    primary_type:
+                      type: string
+                    specialty:
+                      type: string
+                    license_states:
+                      type: string
+                      description: Comma-separated states for all licenses
+                    license_numbers:
+                      type: string
+                      description: Comma-separated license numbers
+              examples:
+                example1:
+                  summary: NPI Lookup Example
+                  value:
+                    - npi: "1234567890"
+                      first_name: "Michael"
+                      last_name: "Smith"
+                      primary_type: "MD"
+                      specialty: "Cardiology"
+                      license_states: "FL,GA,TX"
+                      license_numbers: "FL12345,GA67890,TX55555"
